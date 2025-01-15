@@ -112,7 +112,6 @@ class _AttendancePageState extends State<AttendancePage> {
         final data = jsonDecode(response.body);
         setState(() {
           timetable = data["table"];
-          statusMessage = "Timetable loaded successfully!";
         });
       } else {
         setState(() {
